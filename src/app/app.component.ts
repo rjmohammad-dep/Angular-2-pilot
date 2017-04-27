@@ -8,18 +8,17 @@ export class Hero {
   selector: 'my-app',
   template: `
   <h1>{{title}}</h1>
-  <div>
-  <label>name: </label>
-  <input [(ngModel)]="hero.name" placeholder="name">
-  </div>
+  <h2>{{hero.name}} Detials</h2>
   <div><label>id: </label>{{hero.id}}</div>
-
-  <div><label>name: </label>{{hero.name}}</div>`,
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name">
+    </div>`,
 })
-export class AppComponent  {
+export class AppComponent {
   title = 'Tour of Heroes';
   hero: Hero = {
     id: 1,
     name: 'WindStrom'
   }
- }
+}
